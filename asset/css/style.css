@@ -39,6 +39,27 @@
     border-radius: 20px;
 }
 
+.half-row>span {
+    text-align: center;
+}
+
+.half-row .btn-SU,
+.half-row .btn-SI {
+    text-align: center;
+    font-size: var(--font-size-icon-big);
+    color: gray;
+
+}
+
+
+
+.half-row .btn-SU i:hover,
+.half-row .btn-SI i:hover {
+    color: green;
+    transition: 0.3s linear;
+}
+
+
 .btn-close-box {
     border-radius: 50%;
     right: 0;
@@ -71,7 +92,7 @@
 }
 
 .half-row {
-    text-align: center;
+    padding: 10px;
     margin: auto;
 }
 
@@ -83,12 +104,75 @@
 }
 
 .half-row>ul>li {
+    text-align: left;
     font-size: 15px;
     font-family: var(--font);
     font-weight: 800;
     color: rgb(1, 1, 1);
 }
 
+.half-row>div:first-child,
+.half-row>div:first-child~div {
+    text-align: center;
+
+}
+
+.half-row button {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: gray;
+    font-weight: 800;
+
+}
+
+.half-row button:hover {
+    color: white;
+    background-color: green;
+    transition: 0.3s ease-in;
+}
+
+.formSU div,
+.formSI div {
+    width: 100%;
+    margin: 20px;
+}
+
+.formSU input,
+.formSI input {
+
+    border: none;
+    outline: none;
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formSU input:focus,
+.formSI input:focus {
+    outline: none;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 2);
+    border-color: #03a9f4;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.color {
+    color: green;
+}
+
+/**/
 .logo {
 
     text-align: center;
@@ -131,7 +215,7 @@
 
 /**/
 .has-child::after {
-    content: "V";
+    content: ">";
     margin-left: 3px;
 
 }
@@ -309,12 +393,11 @@
     z-index: 0;
     width: 100vw;
     position: relative;
-
-
 }
 
 
 .section-slide>img:first-child {
+
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -404,7 +487,8 @@
 .section-slide-symbol,
 .section-gallery,
 .section-products,
-.section-shop {
+.section-shop,
+footer {
     width: 100vw;
     display: grid;
     margin-top: 10vh;
@@ -484,13 +568,13 @@
     font-size: 30px;
     line-height: 1;
     font-family: monospace;
-    margin: 20vh 0;
+
     font-weight: 900;
 }
 
 .section-products {
     padding: 0 120px;
-    grid-row-gap: 20vh;
+    grid-row-gap: 15vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -621,8 +705,9 @@
     padding-left: 10px;
 }
 
-.btn-viewall {
-    margin: 10vh 0;
+.btn-viewall,
+.title-section-products {
+    margin: 15vh 0;
     text-align: center;
 
 
@@ -655,6 +740,8 @@
 }
 
 /**/
+
+
 .section-shop>div {
     height: 40vw;
 }
@@ -667,6 +754,12 @@
 }
 
 
+.section-shop .img-shop {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    background-position: center;
+}
 
 .padding {
 
@@ -697,4 +790,112 @@
 
 .box>p:nth-child(2) {
     color: #000000;
+}
+
+/**/
+footer {
+    background-color: #000000;
+
+    height: fit-content;
+    padding: 10% 3%;
+
+}
+
+.main-footer {
+    color: rgb(254, 254, 254);
+    display: grid;
+    font-family: var(--font);
+    text-align: center;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-bottom: 0.1px solid#7b7878;
+}
+
+.main-footer .title {
+    font-size: larger;
+    font-weight: 900;
+}
+
+.main-footer div,
+.main-footer li {
+    margin-bottom: 30px;
+}
+
+.main-footer li a:hover {
+    color: green;
+    transition: 0.3s linear;
+    transition-delay: 0.1s;
+}
+
+.main-footer input:hover {
+    outline: 10px solid green;
+    transition: 0.3s linear;
+    transition-delay: 0.1s;
+}
+
+.signup ul {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.main-footer input {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+
+}
+
+.signup .circle {
+    background-color: #7b7878;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.signup .circle:hover {
+    background-color: green;
+}
+
+.main-footer ul li a {
+    color: white;
+}
+
+/**/
+.end-footer {
+    color: rgb(254, 254, 254);
+    display: grid;
+    font-family: var(--font);
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    padding: 5%;
+}
+
+.rules,
+.card,
+.madeby {
+    margin: auto;
+}
+
+.rules ul,
+.card ul {
+    display: flex;
+}
+
+.rules ul li,
+.madeby ul li {
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
+.card ul li {
+    padding: 10px;
+}
+
+.card ul li a {
+    color: white;
+    font-size: var(--font-size-icon-mobile);
 }

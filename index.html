@@ -25,16 +25,58 @@
         </div>
             <!---->
         <div class="half-row">
+         <div>
+            <span class="btn-SU "><i class="fa-solid fa-user-plus"></i></span>
+            <span class="btn-SI"><i class="fa-solid fa-right-to-bracket"></i></span>
+         </div>
              <div class="letter">
                  THANKS YOU VISITING OUR STORE
              </div>
-
+           
              <ul>
              <li>Get 15% off your first purchaxse! Plus,
               be the first to know about sales, 
              new product launches and exclusive offers!
              </li>
             </ul>
+            <!--Form Signup-->
+            <form action="" method="post" class="formSU hidden" id="form-1">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input id="name"type="text" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input id="email" type="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender: </label>  
+                    <input type="radio" id="gender" name="gender" value="male"/>Male  
+                    <input type="radio" id="gender" name="gender" value="female"/>Female <br/> 
+                </div>
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="reenterpassword">Re-enter Password :</label>
+                    <input type="password" id="reenterpassword">
+                </div>
+                
+                <button class="form-submit">Sign- Up</button>
+            </form>
+            <!---->
+            <form action="" method="post" class="formSI hidden" id="form-2">
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input id="email" type="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" id="password">
+                </div>
+                <button class="form-submit">Sign- In</button>
+            </form>
         </div>
         <!---->
     </div>
@@ -136,7 +178,7 @@
 </div>
 <section>
 <div class="section-slide">
-    <img class="img-banner"  src="./asset/imgs/banner0.jpg">
+    <img class="img-banner "  src="./asset/imgs/banner0.jpg">
 
     <ul class="text-slide ">
         <li>NEW ARRIVALS</li>
@@ -472,7 +514,7 @@
  <!--6-->
 <div class="padding">
     <div class="product-item margin">
-        <img src="./asset/imgs/products/product1.jpg" alt="error">
+        <img class="img-shop"src="./asset/imgs/products/product1.jpg" alt="error">
         <ul class="card-quick">
             <li class="add">QUICK ADD</li>
             <li class="wishlist"><i class="fa-regular fa-heart"></i></li>
@@ -504,8 +546,70 @@
 </div>
 </section>
 <footer>
-
+<div class="main-footer">
+<div class="company">
+    <div class="title">COMPANY</div>
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+         <li><a href="#">Store Locations</a></li>
+        <li><a href="#">Careers</a></li>
+    </ul>
+</div>
+<!---->
+<div class="signup">
+    <label for="email"><div  class="title" >SIGN UP NOW & GET 10% OFF</div></label>
+    <div>Be the first to know about our new arrivals and exclusive offers.</div>
+    <input type="text" id="email" name="email"placeholder="Your Email Address">
+    <p class="circle"><i class="fa-solid fa-arrow-right"></i></p>
+    <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-vimeo"></i></a></li>
+    </ul>
+</div>
+<!---->
+<div class="help">
+    <div  class="title">HELP</div>
+    <ul>
+        <li><a href="#">Order Tracking</a></li>
+        <li><a href="#">FAQ’s</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+</div>
+</div>
+<div class="end-footer">
+<!---->
+<div class="rules">
+<ul>
+    <li>Privacy Policy </li>
+    <li>Terms & Conditions</li>
+</ul>
+</div>
+<!---->
+<div class="card">
+    <ul>
+        <li><a href=""><i class="fa-brands fa-cc-amex"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-cc-paypal"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-cc-discover"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-cc-jcb"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-cc-visa"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-cc-mastercard"></i></a></li>
+    </ul>
+</div>
+<!---->
+<div class="madeby">
+    <ul>
+        <li>©2023 TaThanhHoang THEME</li>
+    </ul>
+</div>
+<!---->
+</div>
 </footer>
 <script type="text/javascript" src="./asset/javascript/script.js"></script>
+<script type="text/javascript" src="./asset/javascript/validator.js"></script>
 </body>
 </html>
