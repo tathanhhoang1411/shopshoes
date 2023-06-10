@@ -26,7 +26,6 @@
 
 .close-popup {
     visibility: hidden;
-
     transition: 0.3s ease-out;
 }
 
@@ -37,7 +36,17 @@
     margin: auto;
     position: relative;
     border-radius: 20px;
+    animation-name: box-popup;
+    /*animation*/
+    animation-duration: 3s;
 }
+
+.half-row img {
+    animation-name: img-box-popup;
+    /*animation*/
+    animation-duration: 3s;
+}
+
 
 .half-row>span {
     text-align: center;
@@ -133,6 +142,7 @@
     background-color: green;
     transition: 0.3s ease-in;
 }
+
 
 .formSU div,
 .formSI div {

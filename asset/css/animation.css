@@ -1,0 +1,26 @@
+@keyframes box-popup {
+    from {
+        top: -700px;
+        width: 35vw;
+    }
+
+    to {
+        top: 0;
+        width: 70vw;
+    }
+}
+
+@keyframes img-box-popup {
+    from {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+}

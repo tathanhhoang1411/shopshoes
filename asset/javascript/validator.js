@@ -1,20 +1,3 @@
-var btn_close_popup = document.querySelector(".btn-close-box")
-btn_close_popup.onclick = function () {
-    var popup = document.querySelector(".popup")
-    popup.classList.add("close-popup");
-}
-function show_text_slide() {
-
-    var text_slide = document.querySelector(".text-slide");
-    text_slide.classList.add("show-text-slide");
-    setInterval(function () {
-        text_slide.classList.toggle("show-text-slide");
-    }, time)
-}
-
-show_text_slide()
-
-
 
 
 btn_SU.onclick = function () {

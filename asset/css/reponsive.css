@@ -382,7 +382,7 @@
     }
 
     .half-row {
-        text-align: left;
+        text-align: center;
         margin: auto;
     }
 }
@@ -533,9 +533,6 @@
         color: green;
     }
 
-
-
-
     .fullrow {
         height: fit-content;
     }
@@ -545,7 +542,7 @@
     }
 
     .half-row {
-        text-align: left;
+        text-align: center;
         margin: auto;
     }
 
