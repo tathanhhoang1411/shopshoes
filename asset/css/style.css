@@ -117,7 +117,7 @@
     font-size: 15px;
     font-family: var(--font);
     font-weight: 800;
-    color: rgb(1, 1, 1);
+    color: rgb(94, 94, 94);
 }
 
 .half-row>div:first-child,
@@ -417,7 +417,6 @@
 
 
 .section-slide>img:last-child {
-
     width: 40%;
     position: absolute;
     object-fit: cover;
