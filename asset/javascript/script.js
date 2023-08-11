@@ -196,6 +196,6 @@ function show_text_slide() {
     }, time)
 }
 
-show_text_slide()
+show_text_slide();
 
 
